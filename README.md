@@ -1,5 +1,5 @@
 # Optimize-Airborne-Ground-Delays-Under-Uncertain-Weather
-This project optimizes shipment routes by minimizing transportation cost while balancing delivery time. It implements optimization algorithms to determine efficient shipment allocations across multiple destinations.
+This project develops an optimization model for Just-in-Time (JIT) vessel arrivals at the Port of Singapore under uncertain weather conditions. The model minimizes total operational cost by jointly optimizing airborne and ground delays while balancing schedule reliability, anchorage waiting, and slow steaming decisions.
 
 ## Background 
 With Singapore having the world’s busiest transshipment hubs and the ongoing transition towards the Tuas Megaport alongside the MPA’s push for ‘Just-in-Time’ arrivals to support Singapore’s Green Plan, we are attempting to solve the JIT arrival problem under uncertainty. 
@@ -19,6 +19,13 @@ How might we optimize vessel arrival schedules under uncertain weather and port 
 - NumPy
 - Matplotlib
 - Julia
+
+## Methodology
+- Formulated the problem as a stochastic optimization model.
+- Modelled uncertain weather scenarios using probability distributions.
+- Optimized vessel scheduling across 48 time slots.
+- Compared anchorage waiting and slow steaming strategies.
+- Evaluated total operational costs under multiple scenarios.
 
 ## Results
 - The model successfully schedules 94 vessels across 48 time slots under uncertain weather, achieving a total expected cost of $1,780,392 per operating day.
