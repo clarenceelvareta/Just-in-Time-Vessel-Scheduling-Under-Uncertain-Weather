@@ -1,8 +1,11 @@
 # Optimize-Airborne-Ground-Delays-Under-Uncertain-Weather
 This project optimizes shipment routes by minimizing transportation cost while balancing delivery time. It implements optimization algorithms to determine efficient shipment allocations across multiple destinations.
 
-## Motivation
-This project was developed to explore optimization techniques used in supply chain and logistics. It demonstrates how mathematical optimization can improve operational efficiency.
+## Background 
+With Singapore having the world’s busiest transshipment hubs and the ongoing transition towards the Tuas Megaport alongside the MPA’s push for ‘Just-in-Time’ arrivals to support Singapore’s Green Plan, we are attempting to solve the JIT arrival problem under uncertainty. 
+
+## Problem Statement
+How might we optimize vessel arrival schedules under uncertain weather and port conditions to enable reliable schedule arrivals at the Port of Singapore?
 
 ## Features
 - Route optimization
@@ -18,10 +21,8 @@ This project was developed to explore optimization techniques used in supply cha
 - Julia
 
 ## Results
-The optimization reduced total shipment cost while maintaining delivery time constraints.
-
-## Installation
-pip install -r requirements.txt
-
-## Run
-Open shipment_optimization.ipynb using Jupyter Notebook.
+- The model successfully schedules 94 vessels across 48 time slots under uncertain weather, achieving a total expected cost of $1,780,392 per operating day.
+- The model naturally discovers a hybrid strategy (anchor for short delays, slow-steam for delays beyond 10 - 14 hours).
+- The planning proves essential: Sumatra Squalls (15% probability) reduce large-berth capacity to zero.
+- The 10 a.m. peak (7 vessels, 5 of them large) with only 2 large berths available per slot is the single biggest cost driver.
+- Future work should incorporate real-time AIS updates to adjust JIT commands as live weather forecasts evolve throughout the day.
