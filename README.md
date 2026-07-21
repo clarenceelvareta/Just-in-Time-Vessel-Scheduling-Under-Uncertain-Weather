@@ -1,4 +1,4 @@
-# Optimize-Airborne-Ground-Delays-Under-Uncertain-Weather
+# Just-in-Time Vessel Scheduling Under Uncertain Weather
 This project develops an optimization model for Just-in-Time (JIT) vessel arrivals at the Port of Singapore under uncertain weather conditions. The model minimizes total operational cost by jointly optimizing airborne and ground delays while balancing schedule reliability, anchorage waiting, and slow steaming decisions.
 
 ## Background 
